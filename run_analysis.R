@@ -3,7 +3,7 @@
 ######The script implements the course project requirements step by step, indicated as "STEP X".
 ######This is to help the reader to follow the logic in the script.
 
-#####STEP 0. Preparatory work of reading source files and loading dpylr package.
+#####STEP 0. Preparatory work of reading source files and loading dplyr package.
 ##Read the data sets from the provided source files.
 print("Starting to read input files.")
 
@@ -21,11 +21,11 @@ features <- read.table("getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/fea
 activityLabels <- read.table("getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/activity_labels.txt")
 
 print("Input files reading complete.")
-print("Loading dpylr package")
+print("Loading dplyr package")
 
 #Load dplyr package for easier data manipulation
 library(dplyr)
-print("dpylr package loaded.")
+print("dplyr package loaded.")
 
 
 
@@ -114,5 +114,5 @@ names(TidyDataSet)[3:68] <- paste("Average for", names(TidyDataSet)[3:68], sep="
 ##Write the result to a text file.
 write.table(TidyDataSet, "tidyDataSet.txt", row.names=FALSE)
 
-print("Step 5 done. Script complete.")
+print("Step 5 done.")
 print("Script complete.")
